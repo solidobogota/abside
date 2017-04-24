@@ -1105,7 +1105,7 @@ height:47px;
 }
 
 footer {
-	background: #f8f8f8 url(../images/footer-bg.png) no-repeat bottom right;
+	background: #c5d30d;
 	background-size: 80%;
 	padding: 80px 0 140px;
 	border-top: 1px solid #eee;
@@ -1116,7 +1116,7 @@ footer {
 }
 
 .footer-bottom {
-	background: rgba(255,255,255,0.03);
+	background: #c5d30d;
 	height: 80px;
 	position: relative;
 	top: -80px;
@@ -4167,7 +4167,7 @@ transition:.4s;
 }
 
 #coming-soon .footer-bottom {
-	background: rgba(0, 0, 0, 0.2);
+	background: #c5d30d;
 	height: 80px;
 	position: relative;
 	top: -80px;
@@ -6413,7 +6413,7 @@ aside {
 }
 
 .footer-bottom {
-    background: #222;
+    background: #c5d30d;
     height: auto;
     position: relative;
     top: -80px;

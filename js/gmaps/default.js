@@ -4,7 +4,7 @@ google.maps.event.addDomListener(window, 'load', init);
 function init() {
 	var mapOptions = {
 		zoom: 11,
-		center: new google.maps.LatLng(40.6700, -73.9400), // New York
+		center: new google.maps.LatLng(4.672097, -74.07018), // New York
 		styles: [{
 			"featureType": "administrative.land_parcel",
 			"elementType": "all",
@@ -92,7 +92,7 @@ function init() {
 	var map = new google.maps.Map(mapElement, mapOptions);
 
 	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(40.6700, -73.9400),
+		position: new google.maps.LatLng(4.672097, -74.07018),
 		map: map,
 		title: 'Snazzy!'
 	});
