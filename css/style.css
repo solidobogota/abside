@@ -47,6 +47,19 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 	max-height: 450px;
 }
 
+#formulario textarea {
+	width: 100%;
+}
+
+#formulario button {
+	width: 100px;
+}
+
+#formulario input {
+	width: 140px;
+}
+
+
 html,
 body {
 	width: 100%;
