@@ -16,6 +16,37 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
 @import url("http://fonts.googleapis.com/css?family=Volkhov:400italic");
 
+* {box-sizing: border-box;}
+
+
+#valores .box_valores {
+		display: inline-table;
+		text-align: center;
+		width: 24%;
+		padding: 12px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #f8f8f8;
+		}
+
+#blog-slider .item {
+			text-align: center;
+		}
+
+.carousel-caption h3 {
+	color: white;
+}
+
+.carousel-caption p {
+	color: white;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+ 	filter:none !important;
+	max-height: 450px;
+}
+
 html,
 body {
 	width: 100%;
@@ -95,6 +126,49 @@ ul, li {
 	margin-right: auto;
 }
 
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.contacto input {
+	padding: 15px;
+	width: 400px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.contacto h4 {
+	text-align: center;
+}
+
+.contacto textarea {
+	margin: 20px 0;
+	padding: 15px;
+	width: 100%;
+}
+
+.contacto button {
+	background-color: #C5D30D;
+	padding: 15px 30px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	}
+
+.contacto div {
+		justify-content: center;
+		}
 
 #header-main.affix a.navbar-brand {
 	font-size: 31px !important;
@@ -124,7 +198,7 @@ ul, li {
 }
 
 #header-main.affix .navbar-brand img {
-	width: 80%;
+	width: 100%;
 	margin-top: 7px;
 }
 
@@ -145,7 +219,7 @@ ul, li {
 }
 
 #header-main .navbar-default {
-	background-color: transparent;
+	background-color: #f8f8f8;
 	border: none;
 }
 
@@ -155,8 +229,10 @@ ul, li {
 
 
 #header-main .navbar-brand img {
-    width: 200px;
-    /*height: 24px;*/
+    width: 100%;
+		max-width: 685px;
+		height: auto;
+		/*height: 24px;*/
 }
 
 #header-main .navbar {
@@ -284,7 +360,7 @@ background:#c5d30d !important;
 
 #header-main .dropdown-menu li a:hover {
 	color: #8dc73f !important;
-	background: #fff !important;
+	background: #E1E1E1 !important;
 }
 
 #header-main .dropdown-menu {
@@ -368,10 +444,6 @@ background:#c5d30d !important;
 }
 
 .navbar-brand {
-	font-family: Pacifico;
-	color: #000 !important;
-	margin-top: 15px;
-	font-size: 35px;
 	height: 0;
 }
 
@@ -382,7 +454,7 @@ background:#c5d30d !important;
 
 .slider-wrap {
     position: relative !important;
-}
+	}
 
 .inner-content {
 	padding: 90px 0;
@@ -426,7 +498,7 @@ background:#c5d30d !important;
 }
 
 .space50 {
-	margin-bottom: 50px;
+	margin-bottom: 1px;
 }
 
 .space60 {
@@ -1281,7 +1353,7 @@ iframe {
 
 .full-contact {
 	background:#fff;
-    padding: 70px 100px;
+    padding: 50px 100px;
 }
 
 .full-contact input {
@@ -2982,6 +3054,7 @@ h2.post-title-small a:hover {
 	transition: .4s;
 }
 
+
 .service-home {
 	padding: 70px 0;
 }
@@ -3152,7 +3225,8 @@ a.readmore ,
 
 .filter li {
 	float: left;
-	margin: 0 10px;
+	margin: 8px 5px;
+	align-items: center;
 }
 
 .filter a {
@@ -3849,7 +3923,7 @@ transition:.4s;
 	opacity: 0;
 	visibility: hidden;
 	transition: .4s;
-}
+	}
 
 #portfolio-home.folio-boxed-2col .project-info ,
 #portfolio-home.folio-boxed-3col .project-info ,
@@ -5523,7 +5597,7 @@ top: -9px;
 .header-x .s-search i {
 font-size:12px;
 position:relative;
-top:2px;
+top:20px;
 	transition:.4s;
 }
 
@@ -6428,7 +6502,6 @@ aside {
     margin: 0px auto;
 }
 
-}
 
 /*
 img{ filter: grayscale(75%);  -webkit-filter: grayscale(75%); filter: grayscale(75%); }
