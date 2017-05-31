@@ -552,33 +552,41 @@
 						</li>
 					</ul>
 
-          <div class="contacto">
-              <h4>FORMULARIO DE CONTACTO</h4>
-              <div id="successSend">
-                <form id="contact-form" action="php/mail.php">
-                  <div>
-                      <div>
-                          <input type="text" id="name" name="name" placeholder="* Su nombre"/>
-                      </div>
-                  </div>
-                  <div>
-                      <div>
-                          <input type="email" name="email" id="email" placeholder="* Su email..."/>
-                      </div>
-                  </div>
-                  <div>
-                      <div>
-                          <textarea class="span12" name="comment" id="comment" placeholder="* Coméntanos"></textarea>
-                      </div>
-                  </div>
-                  <div>
-                      <div>
-                          <button id="send-mail" class="message-btn">Enviar mensaje</button>
-                      </div>
-                  </div>
-              </form>
-          </div>
+<!--FORMULARIO-->
+
+<div class="span5 contact-form centered">
+    <h3>Utiliza este formulario si deseas contactarnos</h3>
+    <div id="successSend">
+        <strong>Bien Hecho!</strong>Tu mensaje fue enviado</div>
+    <div id="errorSend" class="alert alert-error invisible">Existe algún error, por favor revisa.</div>
+    <form id="contact-form" action="php/mail.php">
+        <div class="control-group">
+            <div class="controls">
+                <input class="span12" type="text" id="name" name="name" placeholder="* Su nombre" />
+                <div class="error left-align" id="err-name">Por favor inserte su nombre</div>
+            </div>
         </div>
+        <div class="control-group">
+            <div class="controls">
+                <input class="span12" type="email" name="email" id="email" placeholder="* Su email..." />
+                <div class="error left-align" id="err-email">Por favor ingresa un email válido.</div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <textarea class="span12" name="comment" id="comment" placeholder="* Coméntanos"></textarea>
+                <div class="error left-align" id="err-comment">Por favor ingresa tu comentario</div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button id="send-mail" class="message-btn">Enviar mensaje</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
 
 		</div>
 		<div class="col-md-6 no-padding">
